@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cvNews"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/imgNews"
+            android:src="@drawable/logo_vn_express"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:text="Title"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:padding="10dp" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/imgFavorite"
+                android:src="@drawable/ic_favorites"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
